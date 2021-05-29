@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar_add" type="id" />
+    <item name="nestedScrollView" type="id" />
+    <item name="title_icon" type="id" />
+    <item name="title_text" type="id" />
+    <item name="startTime" type="id" />
+    <item name="endTime" type="id" />
+    <item name="noti_icon" type="id" />
+    <item name="reminder_text" type="id" />
+    <item name="time_spinner" type="id" />
+    <item name="repeat_icon" type="id" />
+    <item name="repeat_text" type="id" />
+    <item name="repeat_spinner" type="id" />
+    <item name="btnEventDateTime" type="id" />
+    <item name="edtEventDateTime" type="id" />
+    <item name="endDateTime" type="id" />
+</resources>

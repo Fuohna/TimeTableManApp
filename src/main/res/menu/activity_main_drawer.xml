@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/all_tasks" />
+
+        <item
+            android:id="@+id/nav_done"
+            android:icon="@drawable/ic_done_outline"
+            android:title="@string/done"/>
+
+        <item
+            android:id="@+id/nav_not_done"
+            android:icon="@drawable/ic_not_done"
+            android:title="@string/not_done"/>
+    </group>
+
+</menu>

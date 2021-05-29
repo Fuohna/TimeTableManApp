@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="phuonganh.com.example.titama.activity.AddTaskActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorButtonNormal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:text="@string/cancel_btn_text"
+                android:textColor="@android:color/holo_blue_dark"
+                android:backgroundTint="?attr/colorButtonNormal"/>
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:text="@string/save_btn_text"
+                android:textColor="@android:color/holo_blue_dark"
+                android:backgroundTint="?attr/colorButtonNormal"/>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_add">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/title_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_baseline_title_24" />
+
+                <EditText
+                    android:id="@+id/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toEndOf="@+id/title_icon"
+                    android:layout_toRightOf="@+id/title_icon"
+                    android:hint="@string/hint_title" />
+
+                <EditText
+                    android:id="@+id/startTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toEndOf="@+id/title_icon"
+                    android:layout_toRightOf="@+id/title_icon"
+                    android:layout_below="@+id/title_text"
+                    android:hint="@string/start_time"/>
+
+                <EditText
+                    android:id="@+id/endTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toEndOf="@+id/title_icon"
+                    android:layout_toRightOf="@+id/title_icon"
+                    android:layout_below="@+id/startTime"
+                    android:hint="@string/end_time"/>
+
+                <ImageView
+                    android:id="@+id/noti_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/endTime"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_baseline_notifications_none_24"/>
+
+                <EditText
+                    android:id="@+id/reminder_text"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_below="@+id/endTime"
+                    android:layout_toRightOf="@+id/noti_icon"
+                    android:layout_toEndOf="@+id/noti_icon" />
+
+                <Spinner
+                    android:id="@+id/time_spinner"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/reminder_text"
+                    android:layout_toEndOf="@+id/reminder_text"
+                    android:layout_below="@+id/endTime"/>
+
+                <ImageView
+                    android:id="@+id/repeat_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reminder_text"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_baseline_repeat_24"/>
+
+                <EditText
+                    android:id="@+id/repeat_text"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_below="@+id/reminder_text"
+                    android:layout_toRightOf="@+id/repeat_icon"
+                    android:layout_toEndOf="@+id/repeat_icon" />
+
+                <Spinner
+                    android:id="@+id/repeat_spinner"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/repeat_text"
+                    android:layout_toEndOf="@+id/repeat_text"
+                    android:layout_below="@+id/reminder_text"/>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

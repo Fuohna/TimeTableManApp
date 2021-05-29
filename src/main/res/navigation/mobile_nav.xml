@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_nav"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="phuonganh.com.example.titama.ui.home.HomeFragment"
+        android:label="All tasks"
+        tools:layout="@layout/home_frag" />
+
+    <fragment
+        android:id="@+id/nav_done"
+        android:name="phuonganh.com.example.titama.ui.done.DoneFragment"
+        android:label="Tasks completed"
+        tools:layout="@layout/done_frag" />
+
+    <fragment
+        android:id="@+id/nav_not_done"
+        android:name="phuonganh.com.example.titama.ui.notdone.NotDoneFragment"
+        android:label="Tasks uncompleted"
+        tools:layout="@layout/not_done_frag" />
+</navigation>

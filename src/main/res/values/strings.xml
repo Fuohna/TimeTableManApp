@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">titAmA</string>
+    <string name="done_hint">No task completed</string>
+    <string name="all_tasks">All tasks</string>
+    <string name="done">Done</string>
+
+    <string name="not_done">Not done yet</string>
+
+
+    <string name="hint_title">Title</string>
+    <string name="set_reminder">Set reminder</string>
+    <string name="add_task">ADD TASK</string>
+    <string name="hint_date">Date</string>
+    <string name="hint_time">Time</string>
+    <string name="empty_view_title">No tasks</string>
+    <string name="empty_view_text">You can create new tasks \n using the + button</string>
+    <string name="cancel_btn_text">CANCEL</string>
+    <string name="save_btn_text">SAVE</string>
+    <string name="start_time">Start</string>
+    <string name="end_time">End</string>
+    <string name="todo">TODO</string>
+
+    <string-array name="labels_array_reminder">
+        <item>None</item>
+        <item>5 mins before</item>
+        <item>10 mins before</item>
+        <item>15 mins before</item>
+        <item>30 mins before</item>
+        <item>1 hour before</item>
+        <item>1 day before</item>
+        <item>Customize</item>
+    </string-array>
+
+    <string-array name="labels_array_repeat">
+        <item>Never</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+</resources>
